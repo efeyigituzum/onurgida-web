@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onur Gıda – İstanbul Avrupa Yakası Toptan Donuk Gıda</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="icon" type="image/png" href="logo.png" />
+
+  <meta property="og:title" content="Onur Gıda - Toptan Donuk Gıda Tedarikçisi" />
+  <meta property="og:description"
+    content="Tost, pizza, köfte ve sandviç çeşitlerinde İstanbul Avrupa Yakası'nın güvenilir toptan donuk gıda tedarikçisi. Fiyatlarımızı inceleyin." />
+  <meta property="og:image" content="https://github.com/efeyigituzum/onurgida-web.git/logo.png" />
+  <meta property="og:url" content="https://github.com/efeyigituzum/onurgida-web.git" />
+  <meta property="og:type" content="website" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+  <header id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo-link">
+        <img src="logo.png" alt="Onur Gıda Logo" class="nav-logo" />
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#neden-biz">Neden Biz?</a>
+        <a href="#urunler">Ürünler</a>
+        <a href="#bolge">Hizmet Bölgesi</a>
+        <a href="#iletisim" class="nav-cta">Sipariş Ver</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape s1"></div>
+      <div class="shape s2"></div>
+      <div class="shape s3"></div>
+    </div>
+    <div class="container hero-grid">
+      <div class="hero-text" data-aos>
+        <span class="badge">🚚 İstanbul Avrupa Yakası Toptan Teslimat</span>
+        <h1>Güvenilir Donuk Gıda <span class="highlight">Toptan</span> Tedarikçiniz</h1>
+        <p class="hero-desc">Tost, sandviç, pizza, köfte ve döner çeşitlerinde geniş ürün yelpazemizle işletmenizin
+          ihtiyacını karşılıyoruz. Soğuk zinciri kırmadan, zamanında kapınıza.</p>
+        <div class="hero-btns">
+          <a href="https://wa.me/905058550101?text=Merhaba,%20Onur%20Gıda%20web%20sitenizden%20ulaşıyorum.%20Toptan%20fiyatlarınız%20ve%20ürünleriniz%20hakkında%20bilgi%20almak%20istiyorum."
+            target="_blank" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            WhatsApp ile Ulaş
+          </a>
+          <a href="#urunler" class="btn btn-outline">Ürünleri İncele →</a>
+        </div>
+      </div>
+      <div class="hero-visual" data-aos data-aos-delay="150">
+        <div class="hero-card-wrap">
+          <div class="hero-stat-card">
+            <div class="hsc-icon"><i class="ph ph-thermometer-cold"></i></div>
+            <div class="hsc-val">-18°C</div>
+            <div class="hsc-label">Donuk Zincir</div>
+          </div>
+          <div class="hero-stat-card accent">
+            <div class="hsc-icon"><i class="ph ph-package"></i></div>
+            <div class="hsc-val">100+</div>
+            <div class="hsc-label">Ürün Çeşidi</div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="hsc-icon"><i class="ph ph-map-pin"></i></div>
+            <div class="hsc-val">39</div>
+            <div class="hsc-label">Avrupa Yakası İlçe</div>
+          </div>
+          <div class="hero-stat-card accent">
+            <div class="hsc-icon"><i class="ph ph-clock"></i></div>
+            <div class="hsc-val">6 Ay</div>
+            <div class="hsc-label">Raf Ömrü</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f7f9f4" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ TRUST BAR ═══════════════════════════ -->
+  <div class="trust-bar">
+    <div class="container trust-inner">
+      <div class="trust-item"><span>✅</span> Gıda Güvenliği Sertifikalı</div>
+      <div class="trust-sep"></div>
+      <div class="trust-item"><span>🚚</span> Soğuk Araç Teslimat</div>
+      <div class="trust-sep"></div>
+      <div class="trust-item"><span>🏭</span> Fabrika Direkt Tedarik</div>
+      <div class="trust-sep"></div>
+      <div class="trust-item"><span>💰</span> Toptan Fiyat Avantajı</div>
+      <div class="trust-sep"></div>
+      <div class="trust-item"><span>📞</span> Hafta içi 08:00–18:00</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════ HAKKIMIZDA ═══════════════════════════ -->
+  <section class="section about-section" id="hakkimizda">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-col" data-aos>
+          <div class="about-logo-box">
+            <img src="logo.png" alt="Onur Gıda" />
+          </div>
+          <div class="about-badge-row">
+            <div class="mini-badge">🥩 Et Ürünleri</div>
+            <div class="mini-badge">🍕 Pizza</div>
+            <div class="mini-badge">🥪 Sandviç</div>
+            <div class="mini-badge">🥐 Tost</div>
+          </div>
+        </div>
+        <div class="about-text-col" data-aos data-aos-delay="100">
+          <span class="section-label">Hakkımızda</span>
+          <h2 class="section-title">İstanbul Avrupa Yakası'nın Toptan Donuk Gıda Tedarikçisi</h2>
+          <p>Onur Gıda olarak İstanbul Avrupa Yakası'ndaki işletmelere — kafeterya, kantin, büfe, restoran ve toplu
+            tüketim merkezlerine — geniş ürün yelpazemizle donuk gıda tedariki yapıyoruz.</p>
+          <p>Türkiye'nin önde gelen markalarından doğrudan temin ettiğimiz ürünleri, soğuk zinciri bozmadan işletmenizin
+            deposuna teslim ediyoruz. Koli bazlı toptan fiyatlarımız ile maliyetlerinizi düşürün.</p>
+          <ul class="about-list">
+            <li><span class="check">✔</span> Fabrika direkt, orijinal ürünler</li>
+            <li><span class="check">✔</span> Minimum sipariş esnekliği</li>
+            <li><span class="check">✔</span> Düzenli haftalık teslimat rotaları</li>
+            <li><span class="check">✔</span> Kişisel satış danışmanı desteği</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ NEDEN BİZ ═══════════════════════════ -->
+  <section class="section why-section" id="neden-biz">
+    <div class="container">
+      <div class="section-head center" data-aos>
+        <span class="section-label">Neden Biz?</span>
+        <h2 class="section-title">İşletmeniz İçin Doğru Tercih</h2>
+        <p class="section-sub">Sadece ürün satmıyor, uzun vadeli iş ortağınız oluyoruz.</p>
+      </div>
+      <div class="cards-grid" id="whyCards">
+        <div class="why-card" data-aos data-aos-delay="0">
+          <div class="why-icon"><i class="ph ph-snowflake"></i></div>
+          <h3>Soğuk Zincir Güvencesi</h3>
+          <p>Ürünler -18°C'de paketlenir ve soğuk araçlarımızla teslim edilir. Kalite bozulmadan kapınıza ulaşır.</p>
+        </div>
+        <div class="why-card" data-aos data-aos-delay="80">
+          <div class="why-icon"><i class="ph ph-tag-chevron"></i></div>
+          <h3>Toptan Fiyat Avantajı</h3>
+          <p>Koli bazlı alımlarda piyasanın altında fiyatlar. İşletmenizin kâr marjını koruyun.</p>
+        </div>
+        <div class="why-card" data-aos data-aos-delay="160">
+          <div class="why-icon"><i class="ph ph-rocket-launch"></i></div>
+          <h3>Hızlı & Güvenilir Teslimat</h3>
+          <p>İstanbul Avrupa Yakası genelinde düzenli rotalı teslimat. Siparişiniz zamanında, eksiksiz gelir.</p>
+        </div>
+        <div class="why-card" data-aos data-aos-delay="240">
+          <div class="why-icon"><i class="ph ph-clipboard-text"></i></div>
+          <h3>Geniş Ürün Yelpazesi</h3>
+          <p>Tost'tan pizzaya, köfteden sandviçe 100+ çeşit. Tek tedarikçiden tüm ihtiyaç.</p>
+        </div>
+        <div class="why-card" data-aos data-aos-delay="320">
+          <div class="why-icon"><i class="ph ph-handshake"></i></div>
+          <h3>Kişisel Hizmet</h3>
+          <p>WhatsApp üzerinden anlık iletişim. Sipariş, değişiklik veya sorunlarınız için yanınızdayız.</p>
+        </div>
+        <div class="why-card" data-aos data-aos-delay="400">
+          <div class="why-icon"><i class="ph ph-shield-check"></i></div>
+          <h3>Hijyen & Kalite</h3>
+          <p>Tüm tedarikçilerimiz gıda güvenliği sertifikasına sahip. Güvenle satın alın, güvenle satın.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ ÜRÜNLER ═══════════════════════════ -->
+  <section class="section products-section" id="urunler">
+    <div class="container">
+      <div class="section-head center" data-aos>
+        <span class="section-label">Ürünler & Fiyatlar</span>
+        <h2 class="section-title">Tüm Ürün Kategorileri</h2>
+        <p class="section-sub">Koli başına birim fiyatlarımız aşağıda listelenmiştir. Toplu alımlarda ek indirim için
+          bizi arayın.</p>
+      </div>
+      <div class="search-container" style="text-align: center; margin-bottom: 25px;" data-aos>
+        <div style="position: relative; max-width: 400px; margin: 0 auto;">
+          <i class="ph ph-magnifying-glass"
+            style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); font-size: 1.2rem; color: var(--text-light);"></i>
+          <input type="text" id="aramaKutusu" placeholder="Ürün Ara (Örn: Pizza, Sandviç...)"
+            style="width: 100%; padding: 14px 14px 14px 45px; border-radius: 50px; border: 2px solid var(--border); font-family: 'Lato', sans-serif; font-size: 0.95rem; outline: none; transition: border-color 0.2s;"
+            onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--border)'" />
+        </div>
+      </div>
+      <div class="tab-bar" role="tablist">
+        <button class="tab active" data-tab="tostlar" role="tab">🥪 Tostlar</button>
+        <button class="tab" data-tab="sandvicler" role="tab">🥖 Sandviçler</button>
+        <button class="tab" data-tab="pizzalar" role="tab">🍕 Pizzalar</button>
+        <button class="tab" data-tab="etler" role="tab">🥩 Et Ürünleri</button>
+      </div>
+
+      <!-- TOSTLAR -->
+      <div class="tab-panel active" id="panel-tostlar">
+        <div class="table-wrap">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Kod</th>
+                <th>Ürün Adı</th>
+                <th>Gramaj</th>
+                <th>Koli Adedi</th>
+                <th>Birim Fiyat</th>
+                <th>Koli Fiyatı</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- SANDVİÇLER -->
+      <div class="tab-panel" id="panel-sandvicler">
+        <div class="table-wrap">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Kod</th>
+                <th>Ürün Adı</th>
+                <th>Kategori</th>
+                <th>Gramaj</th>
+                <th>Koli Adedi</th>
+                <th>Birim Fiyat</th>
+                <th>Koli Fiyatı</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- PİZZALAR -->
+      <div class="tab-panel" id="panel-pizzalar">
+        <div class="table-wrap">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Kod</th>
+                <th>Ürün Adı</th>
+                <th>Kategori</th>
+                <th>Gramaj</th>
+                <th>Koli Adedi</th>
+                <th>Birim Fiyat</th>
+                <th>Koli Fiyatı</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ET ÜRÜNLERİ -->
+      <div class="tab-panel" id="panel-etler">
+        <div class="et-grid">
+          <div class="et-category">
+            <h3 class="et-cat-title"><span>🥩</span> Köfteler</h3>
+            <ul class="et-list">
+              <li>Dana Kasap Köfte</li>
+              <li>Dana Misket Köfte</li>
+              <li>Dana İnegöl Köfte</li>
+              <li>Dana Kaşarlı Köfte</li>
+            </ul>
+          </div>
+          <div class="et-category">
+            <h3 class="et-cat-title"><span>🍔</span> Hamburgerler</h3>
+            <ul class="et-list">
+              <li>Dana Klasik Hamburger</li>
+              <li>Dana Steak Hamburger</li>
+            </ul>
+          </div>
+          <div class="et-category">
+            <h3 class="et-cat-title"><span>🌯</span> Dönerler</h3>
+            <ul class="et-list">
+              <li>Pişmiş Et Döner</li>
+              <li>Pişmiş Tavuk Döner</li>
+              <li>Baton Karışık Et Döner</li>
+              <li>Baton Lüx Et Döner</li>
+              <li>Baton Yaprak Et Döner</li>
+            </ul>
+          </div>
+          <div class="et-category">
+            <h3 class="et-cat-title"><span>🔥</span> Kebap</h3>
+            <ul class="et-list">
+              <li>Dana Kebap</li>
+            </ul>
+          </div>
+        </div>
+        <p class="et-note">* Et ürünlerinde fiyatlar pazara göre değişmektedir. Güncel fiyat için WhatsApp'tan ulaşın.
+        </p>
+      </div>
+
+      <div class="products-cta" data-aos>
+        <p>Toplu alım indirimleri ve özel teklifler için hemen iletişime geçin!</p>
+        <a href="https://wa.me/905058550101?text=Merhaba,%20Onur%20Gıda%20web%20sitenizden%20ulaşıyorum.%20Toptan%20fiyatlarınız%20ve%20ürünleriniz%20hakkında%20bilgi%20almak%20istiyorum."
+          target="_blank" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          Fiyat Teklifi Al
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ BÖLGE ═══════════════════════════ -->
+  <section class="section bolge-section" id="bolge">
+    <div class="container">
+      <div class="section-head center" data-aos>
+        <span class="section-label">Hizmet Bölgesi</span>
+        <h2 class="section-title">İstanbul Avrupa Yakası Geneli</h2>
+        <p class="section-sub">Aşağıdaki tüm ilçelere düzenli teslimat yapıyoruz.</p>
+      </div>
+      <div class="bolge-grid" data-aos>
+        <div class="bolge-col">
+          <h4>🏙️ Merkezi İlçeler</h4>
+          <div class="ilce-chips">
+            <span>Fatih</span><span>Beyoğlu</span><span>Beşiktaş</span>
+            <span>Şişli</span><span>Kağıthane</span><span>Eyüpsultan</span>
+          </div>
+        </div>
+        <div class="bolge-col">
+          <h4>🌆 Kuzey İlçeler</h4>
+          <div class="ilce-chips">
+            <span>Sarıyer</span><span>Beykoz</span><span>Gaziosmanpaşa</span>
+            <span>Sultangazi</span><span>Arnavutköy</span>
+          </div>
+        </div>
+        <div class="bolge-col">
+          <h4>🏘️ Batı İlçeler</h4>
+          <div class="ilce-chips">
+            <span>Bağcılar</span><span>Bahçelievler</span><span>Güngören</span>
+            <span>Esenler</span><span>Bayrampaşa</span><span>Zeytinburnu</span>
+          </div>
+        </div>
+        <div class="bolge-col">
+          <h4>🌳 Dış İlçeler</h4>
+          <div class="ilce-chips">
+            <span>Başakşehir</span><span>Küçükçekmece</span><span>Avcılar</span>
+            <span>Esenyurt</span><span>Büyükçekmece</span><span>Silivri</span>
+            <span>Çatalca</span>
+          </div>
+        </div>
+      </div>
+      <p class="bolge-note">* İşaretli ilçeler için teslimat günlerini öğrenmek adına lütfen bizimle iletişime geçin.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ İLETİŞİM ═══════════════════════════ -->
+  <section class="section contact-section" id="iletisim">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info" data-aos>
+          <span class="section-label">İletişim</span>
+          <h2 class="section-title">Sipariş &amp; Bilgi Alın</h2>
+          <p>Toptan fiyat teklifi, ürün bilgisi veya teslimat planlaması için aşağıdaki kanallardan bize ulaşın. En
+            hızlı yanıt WhatsApp üzerinden verilmektedir.</p>
+          <div class="contact-cards">
+            <a href="https://wa.me/905058550101?text=Merhaba,%20Onur%20Gıda%20web%20sitenizden%20ulaşıyorum.%20Toptan%20fiyatlarınız%20ve%20ürünleriniz%20hakkında%20bilgi%20almak%20istiyorum."
+              target="_blank" class="contact-card wa">
+              <div class="cc-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+              </div>
+              <div>
+                <div class="cc-label">WhatsApp</div>
+                <div class="cc-val">+90 505 855 01 01</div>
+              </div>
+            </a>
+            <a href="tel:+905058550101" class="contact-card tel">
+              <div class="cc-icon">📞</div>
+              <div>
+                <div class="cc-label">Telefon</div>
+                <div class="cc-val">+90 505 855 01 01</div>
+              </div>
+            </a>
+            <div class="contact-card loc">
+              <div class="cc-icon">📍</div>
+              <div>
+                <div class="cc-label">Hizmet Bölgesi</div>
+                <div class="cc-val">İstanbul Avrupa Yakası</div>
+              </div>
+            </div>
+            <div class="contact-card saat">
+              <div class="cc-icon">🕗</div>
+              <div>
+                <div class="cc-label">Çalışma Saatleri</div>
+                <div class="cc-val">Hafta içi 08:00 – 18:00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-col" data-aos data-aos-delay="100">
+          <div class="contact-form">
+            <h3 class="form-title"><i class="ph ph-clipboard-text"></i> Teklif İstek Formu</h3>
+
+            <form id="teklifFormu" action="https://formspree.io/f/xgornzvy" method="POST">
+              <div class="form-row">
+                <div class="fg">
+                  <label>Ad Soyad</label>
+                  <input type="text" name="ad_soyad" placeholder="Ahmet Yılmaz" required />
+                </div>
+                <div class="fg">
+                  <label>Telefon</label>
+                  <input type="tel" name="telefon" placeholder="05058550101" maxlength="11" pattern="^0[0-9]{10}$"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')" required
+                    title="Lütfen 0 ile başlayan 11 haneli numaranızı bitişik yazın (Örn: 05058550101)" />
+                </div>
+              </div>
+
+              <div class="fg">
+                <label>İşletme / Firma Adı</label>
+                <input type="text" name="firma_adi" placeholder="Yıldız Büfe & Kafeterya" />
+              </div>
+
+              <div class="form-row">
+                <div class="fg">
+                  <label>İlçe</label>
+                  <select name="ilce" required>
+                    <option value="">Seçiniz...</option>
+                    <option value="Arnavutköy">Arnavutköy</option>
+                    <option value="Avcılar">Avcılar</option>
+                    <option value="Bağcılar">Bağcılar</option>
+                    <option value="Bahçelievler">Bahçelievler</option>
+                    <option value="Bakırköy">Bakırköy</option>
+                    <option value="Başakşehir">Başakşehir</option>
+                    <option value="Bayrampaşa">Bayrampaşa</option>
+                    <option value="Beşiktaş">Beşiktaş</option>
+                    <option value="Beylikdüzü">Beylikdüzü</option>
+                    <option value="Beyoğlu">Beyoğlu</option>
+                    <option value="Büyükçekmece">Büyükçekmece</option>
+                    <option value="Çatalca">Çatalca</option>
+                    <option value="Esenler">Esenler</option>
+                    <option value="Esenyurt">Esenyurt</option>
+                    <option value="Eyüpsultan">Eyüpsultan</option>
+                    <option value="Fatih">Fatih</option>
+                    <option value="Gaziosmanpaşa">Gaziosmanpaşa</option>
+                    <option value="Güngören">Güngören</option>
+                    <option value="Kağıthane">Kağıthane</option>
+                    <option value="Küçükçekmece">Küçükçekmece</option>
+                    <option value="Sarıyer">Sarıyer</option>
+                    <option value="Silivri">Silivri</option>
+                    <option value="Sultangazi">Sultangazi</option>
+                    <option value="Şişli">Şişli</option>
+                    <option value="Zeytinburnu">Zeytinburnu</option>
+                    <option value="Diğer">Diğer</option>
+                  </select>
+                </div>
+
+                <div class="fg">
+                  <label>İlgilendiğiniz Kategori</label>
+                  <select name="kategori" required>
+                    <option value="">Seçiniz...</option>
+                    <option value="Tostlar">Tostlar</option>
+                    <option value="Sandviçler">Sandviçler</option>
+                    <option value="Pizzalar">Pizzalar</option>
+                    <option value="Et Ürünleri">Et Ürünleri</option>
+                    <option value="Tümü">Tümü</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="fg">
+                <label>Mesajınız</label>
+                <textarea name="mesaj"
+                  placeholder="Haftalık ne kadar ürüne ihtiyacınız var? Hangi ürünler ilginizi çekiyor?"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary full-w" id="submitBtn">
+                <i class="ph ph-paper-plane-right"></i> Teklif Gönder
+              </button>
+            </form>
+
+          </div>
+        </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="logo.png" alt="Onur Gıda" class="footer-logo" />
+        <p>İstanbul Avrupa Yakası'nın güvenilir donuk gıda toptan tedarikçisi.</p>
+        <a href="https://wa.me/905058550101?text=Merhaba,%20Onur%20Gıda%20web%20sitenizden%20ulaşıyorum.%20Toptan%20fiyatlarınız%20ve%20ürünleriniz%20hakkında%20bilgi%20almak%20istiyorum."
+          target="_blank" class="btn btn-primary wa-footer">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          +90 505 855 01 01
+        </a>
+      </div>
+      <div class="footer-links-col">
+        <h4>Hızlı Bağlantılar</h4>
+        <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#neden-biz">Neden Biz?</a>
+        <a href="#urunler">Ürünler</a>
+        <a href="#bolge">Hizmet Bölgesi</a>
+        <a href="#iletisim">İletişim</a>
+      </div>
+      <div class="footer-links-col">
+        <h4>Ürün Kategorileri</h4>
+        <a href="#urunler">🥪 Tostlar</a>
+        <a href="#urunler">🥖 Sandviçler</a>
+        <a href="#urunler">🍕 Pizzalar</a>
+        <a href="#urunler">🥩 Et Ürünleri</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Onur Gıda. Tüm hakları saklıdır. — İstanbul Avrupa Yakası Donuk Gıda Toptan Tedariki</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/905058550101?text=Merhaba,%20Onur%20Gıda%20web%20sitenizden%20ulaşıyorum.%20Toptan%20fiyatlarınız%20ve%20ürünleriniz%20hakkında%20bilgi%20almak%20istiyorum."
+    target="_blank" class="wa-float" title="WhatsApp ile Ulaş">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
